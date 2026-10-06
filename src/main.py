@@ -34,7 +34,6 @@ root = tk.Tk()
 root.title("vfs_emulator")
 root.geometry("600x480")
 
-# Стандартное белое поле для текста со стандартным шрифтом
 output_text = tk.Text(root, height=15, font=("Arial", 13), state=tk.NORMAL)
 output_text.pack(expand=True, fill="both", padx=10, pady=5)
 
@@ -48,11 +47,9 @@ output_text.config(state=tk.DISABLED)
 input_frame = tk.Frame(root)
 input_frame.pack(fill="x", padx=10, pady=10)
 
-# Обычный текст перед вводом
 prompt_label = tk.Label(input_frame, text="vfs:> ", font=("Arial", 13))
 prompt_label.pack(side="left")
 
-# Обычное стандартное поле ввода
 command_entry = tk.Entry(input_frame, font=("Arial", 13))
 command_entry.pack(side="left", fill="x", expand=True)
 
